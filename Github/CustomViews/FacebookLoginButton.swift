@@ -1,0 +1,29 @@
+//
+//  FacebookLoginButton.swift
+//  GoPlayBook
+//
+//  Created by myMac on 28/04/18.
+//  Copyright © 2018 Love. All rights reserved.
+//
+
+import UIKit
+
+let kFacebookLoginButtonBackgroundColor = UIColor(displayP3Red: 59/255, green: 89/255, blue: 153/255, alpha: 1)
+let kFacebookLoginButtonTintColor = UIColor.white
+let kFacebookLoginButtonCornerRadius: CGFloat = 5.0
+
+class FacebookLoginButton: UIButton {
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.configureUI()
+    }
+    
+    private func configureUI() {
+        self.backgroundColor = kFacebookLoginButtonBackgroundColor
+        self.layer.cornerRadius = kFacebookLoginButtonCornerRadius
+        self.tintColor = kFacebookLoginButtonTintColor
+        self.titleLabel?.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 14)
+    }
+    
+}
