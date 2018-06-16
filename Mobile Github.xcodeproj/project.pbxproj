@@ -86,7 +86,7 @@
 		1F34A0DC20948DDD0022ECE0 = {
 			isa = PBXGroup;
 			children = (
-				1F34A0E720948DDD0022ECE0 /* MobileGithub */,
+				1F34A0E720948DDD0022ECE0 /* Mobile Github */,
 				1F34A0E620948DDD0022ECE0 /* Products */,
 				EB31A22CBD348D1EA40BD2D4 /* Pods */,
 				880867BA456F58911882383A /* Frameworks */,
@@ -101,7 +101,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1F34A0E720948DDD0022ECE0 /* MobileGithub */ = {
+		1F34A0E720948DDD0022ECE0 /* Mobile Github */ = {
 			isa = PBXGroup;
 			children = (
 				1FD4E80420D5819B002B7A38 /* Protocols */,
@@ -117,7 +117,7 @@
 				1F34A10D20948E8E0022ECE0 /* UI */,
 				1F34A10A20948E8E0022ECE0 /* Views */,
 			);
-			path = MobileGithub;
+			path = "Mobile Github";
 			sourceTree = "<group>";
 		};
 		1F34A0FA20948E8D0022ECE0 /* Presenters */ = {
@@ -361,7 +361,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1F34A0E020948DDD0022ECE0 /* Build configuration list for PBXProject "MobileGithub" */;
+			buildConfigurationList = 1F34A0E020948DDD0022ECE0 /* Build configuration list for PBXProject "Mobile Github" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -589,7 +589,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/MobileGithub/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Mobile Github/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github;
@@ -609,7 +609,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/MobileGithub/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Mobile Github/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github;
@@ -623,7 +623,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F34A0E020948DDD0022ECE0 /* Build configuration list for PBXProject "MobileGithub" */ = {
+		1F34A0E020948DDD0022ECE0 /* Build configuration list for PBXProject "Mobile Github" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F34A0F520948DDD0022ECE0 /* Debug */,
