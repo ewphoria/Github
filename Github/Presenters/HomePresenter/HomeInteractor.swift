@@ -51,7 +51,7 @@ class HomeInteractorImpl: HomeInteractor {
     
     func logoutUser(homeIteractorDelegate: HomeInteractorDelegate) {
         
-        let userModel = UserModel.getUserFromLocalStorage()
+       /* let userModel = UserModel.getUserFromLocalStorage()
         
         if userModel?.userType == "f" {
             
@@ -65,7 +65,7 @@ class HomeInteractorImpl: HomeInteractor {
             
             googleLoginManager.logOutUser()
             
-        }
+        }*/
      
         UserModel.removeUser()
         

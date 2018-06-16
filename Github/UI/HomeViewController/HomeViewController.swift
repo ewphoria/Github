@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: GPBViewController, HomeView {
+class HomeViewController: ViewController, HomeView {
 
     @IBOutlet weak var imgVwProfilePic: GPBImageView!
     @IBOutlet weak var lblName: UILabel!

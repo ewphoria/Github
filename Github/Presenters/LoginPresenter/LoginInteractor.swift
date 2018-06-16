@@ -8,9 +8,6 @@
 
 import Foundation
 
-import FBSDKCoreKit
-import FBSDKLoginKit
-import GoogleSignIn
 
 protocol OnLoginFinished {
     
@@ -36,7 +33,7 @@ class LoginInteractorImpl: LoginInteractor {
     
     func performFacebookLogin(viewController: UIViewController, onLoginFinishedCallback: OnLoginFinished) {
         
-        let fbManager = FacebookLoginManager.sharedInstance
+       /* let fbManager = FacebookLoginManager.sharedInstance
         
         fbManager.performLogin(viewController: viewController) { (userModel, errorMessage) in
             
@@ -52,12 +49,12 @@ class LoginInteractorImpl: LoginInteractor {
                 onLoginFinishedCallback.loginDidFailedWithError(error: errorMessage!)
             }
             
-        }
+        }*/
     }
     
     func performGoogleLogin(viewController: UIViewController, onLoginFinishedCallback: OnLoginFinished) {
         
-        let googleLoginManager = GoogleLoginManager.sharedInstance
+      /*  let googleLoginManager = GoogleLoginManager.sharedInstance
 
         googleLoginManager.signIn(controller: viewController) { (userModel, error) in
             
@@ -70,7 +67,7 @@ class LoginInteractorImpl: LoginInteractor {
             } else {
                 onLoginFinishedCallback.loginDidFailedWithError(error: error!)
             }
-        }
+        }*/
         
     }
     

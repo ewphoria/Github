@@ -15,42 +15,31 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Github" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GradientView" customModule="Github" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4p-bw-Ood" userLabel="LoginContainerView" customClass="CardView" customModule="Github" customModuleProvider="target">
-                                <rect key="frame" x="19" y="243.5" width="337.5" height="200.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4p-bw-Ood" userLabel="LoginContainerView" customClass="MDCCard">
+                                <rect key="frame" x="19" y="278" width="337.5" height="120"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kI9-T9-s0w" customClass="GPBTextField" customModule="Github" customModuleProvider="target">
-                                        <rect key="frame" x="17" y="20" width="303.5" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="vHZ-5f-lQC"/>
-                                        </constraints>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username or email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kI9-T9-s0w" customClass="MDCTextField">
+                                        <rect key="frame" x="17" y="10" width="303.5" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic_email"/>
-                                        </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V9M-Ms-CxV" customClass="GPBTextField" customModule="Github" customModuleProvider="target">
-                                        <rect key="frame" x="17" y="80" width="303.5" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="TqR-3d-dX5"/>
-                                        </constraints>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V9M-Ms-CxV" customClass="MDCTextField">
+                                        <rect key="frame" x="17" y="40" width="303.5" height="30"/>
+                                        <string key="placeholder">Password
+</string>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic_lock_outline"/>
-                                        </userDefinedRuntimeAttributes>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAu-Tq-PQx" customClass="GPBButton" customModule="Github" customModuleProvider="target">
-                                        <rect key="frame" x="17" y="140" width="303.5" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="ifG-C0-wzM"/>
-                                        </constraints>
+                                        <rect key="frame" x="17" y="70" width="303.5" height="30"/>
+                                        <color key="backgroundColor" red="0.1764705882352941" green="0.68235294117647061" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="actionLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aig-mL-gV9"/>
@@ -63,55 +52,38 @@
                                     <constraint firstItem="JAu-Tq-PQx" firstAttribute="leading" secondItem="V9M-Ms-CxV" secondAttribute="leading" id="8vA-Gc-7qT"/>
                                     <constraint firstItem="V9M-Ms-CxV" firstAttribute="trailing" secondItem="kI9-T9-s0w" secondAttribute="trailing" id="Do9-KG-Nia"/>
                                     <constraint firstItem="JAu-Tq-PQx" firstAttribute="trailing" secondItem="V9M-Ms-CxV" secondAttribute="trailing" id="JFs-Yy-elI"/>
-                                    <constraint firstItem="JAu-Tq-PQx" firstAttribute="top" secondItem="V9M-Ms-CxV" secondAttribute="bottom" constant="20" id="Jo3-SY-GSP"/>
+                                    <constraint firstItem="JAu-Tq-PQx" firstAttribute="top" secondItem="V9M-Ms-CxV" secondAttribute="bottom" id="Jo3-SY-GSP"/>
                                     <constraint firstItem="V9M-Ms-CxV" firstAttribute="leading" secondItem="kI9-T9-s0w" secondAttribute="leading" id="Rw1-Mz-cMc"/>
-                                    <constraint firstItem="V9M-Ms-CxV" firstAttribute="top" secondItem="kI9-T9-s0w" secondAttribute="bottom" constant="20" id="f7E-bJ-3EE"/>
-                                    <constraint firstItem="kI9-T9-s0w" firstAttribute="top" secondItem="t4p-bw-Ood" secondAttribute="top" constant="20" id="hGD-qr-KSg"/>
+                                    <constraint firstItem="V9M-Ms-CxV" firstAttribute="top" secondItem="kI9-T9-s0w" secondAttribute="bottom" id="f7E-bJ-3EE"/>
+                                    <constraint firstItem="kI9-T9-s0w" firstAttribute="top" secondItem="t4p-bw-Ood" secondAttribute="top" constant="10" id="hGD-qr-KSg"/>
+                                    <constraint firstAttribute="bottom" secondItem="JAu-Tq-PQx" secondAttribute="bottom" constant="20" id="pEn-ji-zz8"/>
                                     <constraint firstItem="kI9-T9-s0w" firstAttribute="centerX" secondItem="t4p-bw-Ood" secondAttribute="centerX" id="pzh-uj-jrk"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMd-5r-siB" customClass="FacebookLoginButton" customModule="Github" customModuleProvider="target">
-                                <rect key="frame" x="36" y="464" width="304" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="QiD-Jq-2a4"/>
-                                </constraints>
-                                <state key="normal" title="Login with Facebook"/>
-                                <connections>
-                                    <action selector="actionFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zfh-wx-wyT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whm-ch-zXW" customClass="GoogleLoginButton" customModule="Github" customModuleProvider="target">
-                                <rect key="frame" x="36" y="524" width="304" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Bad-Cw-StY"/>
-                                </constraints>
-                                <state key="normal" title="Login with Google"/>
-                                <connections>
-                                    <action selector="actionGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nVT-XO-T3u"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="github" translatesAutoresizingMaskIntoConstraints="NO" id="wfE-VH-v3d">
                                 <rect key="frame" x="103" y="40" width="169" height="169"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to GitHub" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0u-ob-X2E">
+                                <rect key="frame" x="100.5" y="229" width="175" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wfE-VH-v3d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6Rc-Zk-uWr"/>
                             <constraint firstItem="wfE-VH-v3d" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fw5-LX-5iL"/>
                             <constraint firstItem="t4p-bw-Ood" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="Nch-Ro-4Nz"/>
                             <constraint firstItem="t4p-bw-Ood" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PPy-tf-FMp"/>
-                            <constraint firstItem="Whm-ch-zXW" firstAttribute="leading" secondItem="WMd-5r-siB" secondAttribute="leading" id="SIp-K8-9mq"/>
-                            <constraint firstItem="t4p-bw-Ood" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="Z68-ky-kil"/>
-                            <constraint firstItem="WMd-5r-siB" firstAttribute="width" secondItem="t4p-bw-Ood" secondAttribute="width" multiplier="0.9" id="Z9P-s3-8KZ"/>
-                            <constraint firstItem="WMd-5r-siB" firstAttribute="top" secondItem="t4p-bw-Ood" secondAttribute="bottom" constant="20" id="Zt4-cS-QlL"/>
-                            <constraint firstItem="Whm-ch-zXW" firstAttribute="top" secondItem="WMd-5r-siB" secondAttribute="bottom" constant="20" id="fIP-Rh-JeF"/>
-                            <constraint firstItem="WMd-5r-siB" firstAttribute="centerX" secondItem="t4p-bw-Ood" secondAttribute="centerX" id="iek-oV-qLU"/>
-                            <constraint firstItem="t4p-bw-Ood" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="myx-FZ-mtv"/>
-                            <constraint firstItem="Whm-ch-zXW" firstAttribute="trailing" secondItem="WMd-5r-siB" secondAttribute="trailing" id="sTq-dA-IHt"/>
+                            <constraint firstItem="e0u-ob-X2E" firstAttribute="centerX" secondItem="wfE-VH-v3d" secondAttribute="centerX" id="Xv2-Jh-Xde"/>
+                            <constraint firstItem="e0u-ob-X2E" firstAttribute="top" secondItem="wfE-VH-v3d" secondAttribute="bottom" constant="20" id="eRG-Lp-rlV"/>
+                            <constraint firstItem="t4p-bw-Ood" firstAttribute="top" secondItem="e0u-ob-X2E" secondAttribute="bottom" constant="20" id="fjM-7k-Vxa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="btnLogin" destination="JAu-Tq-PQx" id="j3d-Ch-Gpv"/>
                         <outlet property="txtEmail" destination="kI9-T9-s0w" id="53E-CU-uBM"/>
                         <outlet property="txtPassword" destination="V9M-Ms-CxV" id="6zb-I6-cMZ"/>
                         <segue destination="f9b-QU-G3C" kind="presentation" identifier="presentHome" id="su8-y4-cKB"/>
@@ -211,9 +183,7 @@
     </scenes>
     <resources>
         <image name="github" width="169" height="169"/>
-        <image name="ic_email" width="24" height="24"/>
         <image name="ic_exit_to_app" width="24" height="24"/>
-        <image name="ic_lock_outline" width="24" height="24"/>
         <image name="ic_person_white" width="24" height="24"/>
     </resources>
 </document>

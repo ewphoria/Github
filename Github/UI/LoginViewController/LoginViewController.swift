@@ -8,24 +8,46 @@
 
 import UIKit
 
-class LoginViewController: GPBViewController, LoginView {
+import MaterialComponents.MaterialTextFields
+import RxCocoa
+import RxSwift
 
-    @IBOutlet var txtEmail: UITextField!
+class LoginViewController: ViewController, LoginView {
     
-    @IBOutlet var txtPassword: UITextField!
-
+    @IBOutlet var txtEmail: MDCTextField!
+    @IBOutlet var txtPassword: MDCTextField!
+    @IBOutlet var btnLogin: GPBButton!
+    
+    var emailTextFieldController = MDCTextInputControllerUnderline()
+    var passwordTextFieldController = MDCTextInputControllerUnderline()
+    
+    let signinViewModel = SigninViewModel()
+    
     var loginPresenterImpl : LoginPresenterImpl?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loginInteractorImpl = LoginInteractorImpl()
+        txtEmail.clearButtonMode = .never
+        txtPassword.clearButtonMode = .never
         
-        loginPresenterImpl  =  LoginPresenterImpl(view: self, interactor: loginInteractorImpl)
+        emailTextFieldController = MDCTextInputControllerUnderline(textInput: txtEmail)
+        passwordTextFieldController = MDCTextInputControllerUnderline(textInput: txtPassword)
+        
+        _ = txtEmail.rx.text.map { $0 ?? ""}.bind(to: signinViewModel.userName)
+        _ = txtPassword.rx.text.map { $0 ?? ""}.bind(to: signinViewModel.password)
+        
+        _ = signinViewModel.isValid.bind(to: btnLogin.rx.isEnabled)
+
+        //let loginInteractorImpl = LoginInteractorImpl()
+        
+        //loginPresenterImpl  =  LoginPresenterImpl(view: self, interactor: loginInteractorImpl)
+        //btnLogin.isEnabled = false
     }
     
     @IBAction func actionLogin(_ sender: Any) {
         
+        btnLogin.isEnabled = true
         loginPresenterImpl?.login(email: txtEmail.text, password: txtPassword.text)
         
     }
