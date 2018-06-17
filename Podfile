@@ -18,6 +18,9 @@ pod 'RxCocoa',    '~> 4.0'
 
 pod 'Alamofire', '~> 4.7'
 
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+
   # Pods for Github
 
 end

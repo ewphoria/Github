@@ -11,6 +11,7 @@ import UIKit
 import MaterialComponents.MaterialTextFields
 import RxCocoa
 import RxSwift
+import FirebaseAuth
 
 class LoginViewController: ViewController, LoginView {
     
@@ -46,10 +47,7 @@ class LoginViewController: ViewController, LoginView {
     }
     
     @IBAction func actionLogin(_ sender: Any) {
-        
-        btnLogin.isEnabled = true
-        loginPresenterImpl?.login(email: txtEmail.text, password: txtPassword.text)
-        
+        signinViewModel.signIn()
     }
     
     @IBAction func actionFacebook(_ sender: Any) {

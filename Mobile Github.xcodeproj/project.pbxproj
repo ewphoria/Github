@@ -27,12 +27,15 @@
 		1F36ED7C2094E9AF006D9D44 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F36ED7B2094E9AF006D9D44 /* HomeInteractor.swift */; };
 		1F36ED7E2095017B006D9D44 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F36ED7D2095017B006D9D44 /* GoogleService-Info.plist */; };
 		1F424D0520957B2500D6BC76 /* GoogleLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F424D0420957B2500D6BC76 /* GoogleLoginButton.swift */; };
+		1F46B3F720D6318900DBD05E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F46B3F620D6318900DBD05E /* Colors.xcassets */; };
+		1F46B3FA20D6384C00DBD05E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F46B3F920D6384C00DBD05E /* SignupViewController.swift */; };
+		1F46B3FC20D6415A00DBD05E /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F46B3FB20D6415A00DBD05E /* SignupViewModel.swift */; };
 		1F958A082094D362000BC7D1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F958A072094D362000BC7D1 /* UserModel.swift */; };
 		1FC449372094B94B00D0B848 /* FacebookLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC449362094B94B00D0B848 /* FacebookLoginButton.swift */; };
 		1FD4E80320D56E71002B7A38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD4E80120D56E71002B7A38 /* ViewController.swift */; };
 		1FD4E80620D581DE002B7A38 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD4E80520D581DE002B7A38 /* GithubAPI.swift */; };
 		1FD4E80B20D583AC002B7A38 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD4E80A20D583AC002B7A38 /* APIManager.swift */; };
-		1FF6F34020D5093E008C9129 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6F33F20D5093E008C9129 /* SignupViewModel.swift */; };
+		1FF6F34020D5093E008C9129 /* SigninViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6F33F20D5093E008C9129 /* SigninViewModel.swift */; };
 		67EE83BB799C5738995644C2 /* Pods_Github.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C39D08FBBF2D03C330F725C /* Pods_Github.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,12 +64,15 @@
 		1F36ED7B2094E9AF006D9D44 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		1F36ED7D2095017B006D9D44 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F424D0420957B2500D6BC76 /* GoogleLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginButton.swift; sourceTree = "<group>"; };
+		1F46B3F620D6318900DBD05E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1F46B3F920D6384C00DBD05E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		1F46B3FB20D6415A00DBD05E /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		1F958A072094D362000BC7D1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1FC449362094B94B00D0B848 /* FacebookLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginButton.swift; sourceTree = "<group>"; };
 		1FD4E80120D56E71002B7A38 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1FD4E80520D581DE002B7A38 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		1FD4E80A20D583AC002B7A38 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		1FF6F33F20D5093E008C9129 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		1FF6F33F20D5093E008C9129 /* SigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewModel.swift; sourceTree = "<group>"; };
 		AA8FBF042375814BA9111452 /* Pods-Github.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Github.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Github/Pods-Github.debug.xcconfig"; sourceTree = "<group>"; };
 		CA684B58C9A06C0C2B1BBE73 /* Pods-Github.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Github.release.xcconfig"; path = "Pods/Target Support Files/Pods-Github/Pods-Github.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +185,7 @@
 				1F34A1352094A80F0022ECE0 /* GoPlayBook-Bridging-Header.h */,
 				1F34A10620948E8D0022ECE0 /* Assets.xcassets */,
 				1F34A10920948E8D0022ECE0 /* Info.plist */,
+				1F46B3F620D6318900DBD05E /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -195,6 +202,7 @@
 		1F34A10D20948E8E0022ECE0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1F46B3F820D6383900DBD05E /* SignupViewController */,
 				1FD4E7FF20D56E71002B7A38 /* ViewController */,
 				1F36ED712094E2F0006D9D44 /* HomeViewController */,
 				1F34A10F20948E8E0022ECE0 /* LoginViewController */,
@@ -264,6 +272,14 @@
 			path = HomePresenter;
 			sourceTree = "<group>";
 		};
+		1F46B3F820D6383900DBD05E /* SignupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1F46B3F920D6384C00DBD05E /* SignupViewController.swift */,
+			);
+			path = SignupViewController;
+			sourceTree = "<group>";
+		};
 		1F9589492094CF4A000BC7D1 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,7 +314,8 @@
 		1FF6F33E20D50922008C9129 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				1FF6F33F20D5093E008C9129 /* SignupViewModel.swift */,
+				1FF6F33F20D5093E008C9129 /* SigninViewModel.swift */,
+				1F46B3FB20D6415A00DBD05E /* SignupViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -387,6 +404,7 @@
 				1F34A11520948E8E0022ECE0 /* Assets.xcassets in Resources */,
 				1F34A11920948E8E0022ECE0 /* Main.storyboard in Resources */,
 				1F34A11820948E8E0022ECE0 /* LaunchScreen.storyboard in Resources */,
+				1F46B3F720D6318900DBD05E /* Colors.xcassets in Resources */,
 				1F34A11720948E8E0022ECE0 /* Info.plist in Resources */,
 				1F36ED7E2095017B006D9D44 /* GoogleService-Info.plist in Resources */,
 			);
@@ -449,12 +467,14 @@
 			files = (
 				1F36ED752094E4B8006D9D44 /* GPBImageView.swift in Sources */,
 				1F34A11D20948EF90022ECE0 /* LoginViewController.swift in Sources */,
-				1FF6F34020D5093E008C9129 /* SignupViewModel.swift in Sources */,
+				1F46B3FA20D6384C00DBD05E /* SignupViewController.swift in Sources */,
+				1FF6F34020D5093E008C9129 /* SigninViewModel.swift in Sources */,
 				1F34A124209491060022ECE0 /* Colors.swift in Sources */,
 				1FD4E80320D56E71002B7A38 /* ViewController.swift in Sources */,
 				1F34A11420948E8E0022ECE0 /* AppDelegate.swift in Sources */,
 				1FD4E80B20D583AC002B7A38 /* APIManager.swift in Sources */,
 				1F36ED732094E31D006D9D44 /* HomeViewController.swift in Sources */,
+				1F46B3FC20D6415A00DBD05E /* SignupViewModel.swift in Sources */,
 				1F34A11320948E8E0022ECE0 /* LoginView.swift in Sources */,
 				1F34A12A20949E200022ECE0 /* GPBButton.swift in Sources */,
 				1F36ED7C2094E9AF006D9D44 /* HomeInteractor.swift in Sources */,

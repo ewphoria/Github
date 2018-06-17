@@ -23,10 +23,11 @@ class GPBButton: MDCRaisedButton {
     }
     
     private func configureUI() {
-        self.backgroundColor = UIColor.init(hexString:kLoginButtonBackgroundColorDefault)
-        self.layer.cornerRadius = kLoginButtonCornerRadius
-        self.tintColor = kLoginButtonTintColor
-        self.titleLabel?.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 14)
+        backgroundColor = UIColor.init(hexString:kLoginButtonBackgroundColorDefault)
+        layer.cornerRadius = kLoginButtonCornerRadius
+        tintColor = kLoginButtonTintColor
+        titleLabel?.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 14)
+        titleLabel?.textColor = UIColor.white
         
     }
     
