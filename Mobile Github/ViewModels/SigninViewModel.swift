@@ -12,6 +12,9 @@ import FirebaseAuth
 
 class SigninViewModel {
     
+    typealias SigninCompletionBlock = (_ errorMessage : String?) -> Void
+
+    
     let userName = BehaviorRelay<String>(value: "")
     let password = BehaviorRelay<String>(value: "")
  
@@ -21,14 +24,14 @@ class SigninViewModel {
         }
     }
     
-    func signIn() -> Void {
+    func signIn(completion : @escaping SigninCompletionBlock) -> Void {
         Auth.auth().signIn(withEmail: userName.value, password: password.value) { (user, error) in
             
-            if error != nil {
-                print(error?.localizedDescription)
+            if let er = error?.localizedDescription {
+                completion(er)
             } else {
                 if let userName = user?.email {
-                    print(userName)
+                    completion(nil)
                 }
             }
         }

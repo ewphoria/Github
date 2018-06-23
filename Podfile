@@ -21,6 +21,8 @@ pod 'Alamofire', '~> 4.7'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 
+pod 'Toaster'
+
   # Pods for Github
 
 end

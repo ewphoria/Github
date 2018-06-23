@@ -39,15 +39,18 @@ class LoginViewController: ViewController, LoginView {
         _ = txtPassword.rx.text.map { $0 ?? ""}.bind(to: signinViewModel.password)
         
         _ = signinViewModel.isValid.bind(to: btnLogin.rx.isEnabled)
-
-        //let loginInteractorImpl = LoginInteractorImpl()
-        
-        //loginPresenterImpl  =  LoginPresenterImpl(view: self, interactor: loginInteractorImpl)
-        //btnLogin.isEnabled = false
     }
     
     @IBAction func actionLogin(_ sender: Any) {
-        signinViewModel.signIn()
+        signinViewModel.signIn { (errorMessage) in
+            
+            if let error = errorMessage {
+                super.showMessage(message: error)
+            } else {
+                super.showMessage(message: "Signup successfull")
+            }
+            
+        }
     }
     
     @IBAction func actionFacebook(_ sender: Any) {
@@ -65,7 +68,7 @@ class LoginViewController: ViewController, LoginView {
     // MARK: LoginView Methods Implementation
     
     func showMessage(error: String) {
-        super.showMessage(title: nil, message: error)
+        super.showMessage(message: error)
     }
     
     func presentHomeView() {

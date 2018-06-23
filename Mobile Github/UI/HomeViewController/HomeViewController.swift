@@ -72,7 +72,7 @@ class HomeViewController: ViewController, HomeView {
     }
     
     func showMessage(error: String) {
-        super.showMessage(title: nil, message: error)
+        super.showMessage(message: error)
     }
     
     func dimissHomeView() {

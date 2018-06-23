@@ -77,6 +77,7 @@ PODS:
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
+  - Toaster (2.1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
@@ -89,6 +90,7 @@ DEPENDENCIES:
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - SDWebImage (~> 4.0)
+  - Toaster
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
@@ -107,7 +109,8 @@ SPEC CHECKSUMS:
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
 
-PODFILE CHECKSUM: 61e1dcacdb9f664409f1bf91395273b02a01ca1a
+PODFILE CHECKSUM: 5b2947c8dff93caf08bc2c32d745969a9367eb13
 
 COCOAPODS: 1.2.1

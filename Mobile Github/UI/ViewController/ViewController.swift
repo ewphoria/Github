@@ -9,6 +9,7 @@
 import UIKit
 
 import RxSwift
+import Toaster
 
 class ViewController: UIViewController {
     
@@ -31,22 +32,9 @@ class ViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    func showMessage(title:String?, message:String) -> Void {
+    func showMessage( message:String) -> Void {
         
-        var defaultAlertTitle = "GoPlayBook"
-        
-        if let alertTitle = title {
-            defaultAlertTitle = alertTitle
-        }
-        
-        let alert = UIAlertController(title: defaultAlertTitle, message: message, preferredStyle: .alert)
-        
-        let actionDismiss = UIAlertAction(title: "Dimiss", style: .default) { (action:UIAlertAction) in }
-        
-        alert.addAction(actionDismiss)
-        
-        self.present(alert, animated: true, completion: nil)
-
+        Toast(text: message).show()
     }
 
     func hideLoading() -> Void {

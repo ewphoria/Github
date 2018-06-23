@@ -176,6 +176,7 @@
                                         <state key="normal" title="Sign up"/>
                                         <connections>
                                             <action selector="actionLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kt7-v2-GNL"/>
+                                            <action selector="actionSignup" destination="nP4-ga-Jg3" eventType="touchUpInside" id="vGn-pI-4CT"/>
                                         </connections>
                                     </button>
                                 </subviews>

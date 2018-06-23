@@ -44,4 +44,15 @@ class SignupViewController: ViewController {
     @IBAction func popViewController () -> Void {
         navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func actionSignup () -> Void {
+        signupViewModel.signUp { (errorMessage) in
+            
+            if let error = errorMessage {
+                super.showMessage(message: error)
+            } else {
+                super.showMessage(message: "Signup successfull")
+            }
+        }
+    }
 }
