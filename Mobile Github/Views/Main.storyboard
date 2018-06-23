@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-772" y="29"/>
+            <point key="canvasLocation" x="-884" y="28"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="sSF-kP-2dp">
@@ -248,24 +248,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="shu-Ln-nqT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-44" y="33"/>
+            <point key="canvasLocation" x="-44" y="25"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home View Controller-->
+        <scene sceneID="vTx-ze-9PO">
+            <objects>
+                <viewController storyboardIdentifier="home" id="4dW-Ij-ZVO" customClass="HomeViewController" customModule="Github" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RJI-Io-d02">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zt4-VY-dyM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <sections/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqM-tG-vyv" customClass="MDCFloatingButton">
+                                <rect key="frame" x="325" y="607" width="30" height="40"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zt4-VY-dyM" firstAttribute="top" secondItem="LXS-4K-Fms" secondAttribute="top" id="27u-7G-bu6"/>
+                            <constraint firstItem="kqM-tG-vyv" firstAttribute="trailing" secondItem="LXS-4K-Fms" secondAttribute="trailing" constant="-20" id="9rG-Jj-nEa"/>
+                            <constraint firstItem="Zt4-VY-dyM" firstAttribute="leading" secondItem="LXS-4K-Fms" secondAttribute="leading" id="COG-dM-i73"/>
+                            <constraint firstItem="LXS-4K-Fms" firstAttribute="bottom" secondItem="Zt4-VY-dyM" secondAttribute="bottom" id="Dxg-rN-kMO"/>
+                            <constraint firstItem="LXS-4K-Fms" firstAttribute="trailing" secondItem="Zt4-VY-dyM" secondAttribute="trailing" id="v8E-3U-EkL"/>
+                            <constraint firstItem="LXS-4K-Fms" firstAttribute="bottom" secondItem="kqM-tG-vyv" secondAttribute="bottom" constant="20" id="wG5-tR-mzz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LXS-4K-Fms"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Xb-To-jZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-884" y="712"/>
+        </scene>
+        <!--Base Navigation Controller-->
         <scene sceneID="1xm-vq-24i">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="2wj-gR-1sR" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="2wj-gR-1sR" customClass="BaseNavigationController" customModule="Github" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GTU-yu-D9V">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gh8-gM-ndg"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="rootToSignup" id="GtP-NP-cdj"/>
+                        <segue destination="4dW-Ij-ZVO" kind="show" identifier="rootToHome" id="GxW-YN-NCB"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8T-eJ-BWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1678" y="77"/>
+            <point key="canvasLocation" x="-2335" y="406"/>
         </scene>
     </scenes>
     <resources>

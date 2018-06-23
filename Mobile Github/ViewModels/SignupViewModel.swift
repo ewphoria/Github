@@ -39,7 +39,10 @@ class SignupViewModel {
             if let er = error?.localizedDescription {
                 completion(er)
             } else {
-                if let mail = newUser?.email {
+                if let userID = newUser?.uid {
+                    
+                    UserDefaults.standard.set(userID, forKey: UserDefaults.Keys.userID)
+                    
                     completion(nil)
                 }
             }

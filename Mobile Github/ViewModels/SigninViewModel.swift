@@ -30,7 +30,10 @@ class SigninViewModel {
             if let er = error?.localizedDescription {
                 completion(er)
             } else {
-                if let userName = user?.email {
+                if let userID = user?.uid {
+                    
+                    UserDefaults.standard.set(userID, forKey: UserDefaults.Keys.userID)
+
                     completion(nil)
                 }
             }

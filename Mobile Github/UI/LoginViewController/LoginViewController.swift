@@ -48,8 +48,10 @@ class LoginViewController: ViewController, LoginView {
                 super.showMessage(message: error)
             } else {
                 super.showMessage(message: "Signup successfull")
+                if let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: "home") {
+                    self.navigationController?.pushViewController(homeViewController, animated: true)
+                }
             }
-            
         }
     }
     

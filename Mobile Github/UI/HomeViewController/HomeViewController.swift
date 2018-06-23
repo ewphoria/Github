@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: ViewController, HomeView {
+class HomeViewController: ViewController {
 
     @IBOutlet weak var imgVwProfilePic: GPBImageView!
     @IBOutlet weak var lblName: UILabel!
@@ -21,62 +21,12 @@ class HomeViewController: ViewController, HomeView {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "GoPlayBook"
-
-        let homeInteractorImpl = HomeInteractorImpl()
-        
-        homePresenterImpl  =  HomePresenterImpl(view: self, interactor: homeInteractorImpl)
+        self.title = "GitHub"
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-        homePresenterImpl?.getUserData()
-        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
-    func setUserProfile(user: UserModel) {
-      
-        
-        if let fName = user.firstName {
-            self.lblName.text = fName
-        }
-        
-        if let emailId = user.email {
-            self.lblEmail.text = emailId
-        }
-        
-        if let imageURL = user.profilePicture {
-            self.imgVwProfilePic.setImageWithURL(urlString: imageURL, placeHolder: nil)
-        }
-        
-        if let userType = user.userType {
-            
-            if userType == "f" {
-                self.lblUserType.text = "Facebook"
-            } else {
-                self.lblUserType.text = "Google"
-            }
-            
-        }
-    }
-    
-    @IBAction func actionLogout(_ sender: Any) {
-        homePresenterImpl?.logout()
-    }
-
-    func showLoadingIndicator() {
-        super.showLoading()
-    }
-    
-    func hideLoadingIndicator() {
-        super.hideLoading()
-    }
-    
-    func showMessage(error: String) {
-        super.showMessage(message: error)
-    }
-    
-    func dimissHomeView() {
-        self.dismiss(animated: true, completion: nil)
-    }
-
 }
