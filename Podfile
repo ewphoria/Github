@@ -23,6 +23,8 @@ pod 'Firebase/Auth'
 
 pod 'Toaster'
 
+pod 'Koloda', '~> 4.3.1'
+
   # Pods for Github
 
 end

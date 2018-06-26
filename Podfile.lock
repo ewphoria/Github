@@ -31,6 +31,8 @@ PODS:
   - GoogleToolboxForMac/NSString+URLArguments (2.1.3)
   - GTMSessionFetcher/Core (1.1.14)
   - IQKeyboardManagerSwift (5.0.0)
+  - Koloda (4.3.1):
+    - pop (~> 1.0)
   - MaterialComponents/AnimationTiming (48.0.0)
   - MaterialComponents/Buttons (48.0.0):
     - MaterialComponents/Ink
@@ -71,6 +73,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - pop (1.0.10)
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
@@ -84,6 +87,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - IQKeyboardManagerSwift (= 5.0.0)
+  - Koloda (~> 4.3.1)
   - MaterialComponents/Buttons
   - MaterialComponents/Cards
   - MaterialComponents/TextFields
@@ -102,15 +106,17 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMSessionFetcher: 390ea358e5a0d0133153806f744662dad933d06b
   IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
+  Koloda: 0d39b2aa188ccd1fac48d752acaf9802e683c625
   MaterialComponents: 540ef387fee311a1b4b3ccec93d4db6db35d24bf
   MDFInternationalization: e355b0cebecf53d60233bd267084e49366c82513
   MDFTextAccessibility: 94098925e0853551c5a311ce7c1ecefbe297cdb6
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
 
-PODFILE CHECKSUM: 5b2947c8dff93caf08bc2c32d745969a9367eb13
+PODFILE CHECKSUM: eec1613c6c43d220ea0ef62ea03767cee52f0c30
 
 COCOAPODS: 1.2.1
